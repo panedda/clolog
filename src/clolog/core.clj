@@ -31,8 +31,13 @@
     (let [values (split-values line)]
       (if (= (count values) (count labels))
         (create-record line labels)
-        (hash-map)
-        ))
+        (let [labels
+               (into [] (for [x (range 10)]
+                          (str "label-" (inc x))))]
+           (create-record line labels)
+        )
+      )
+    )
     )
   )
 

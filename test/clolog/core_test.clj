@@ -44,7 +44,7 @@ Case 30,Inbound Call,22.3.10 10:16,22.3.10 10:17,FL,Customer 25,iPhone,Product A
   (testing "Testing the creation of a record from a csv line"
     (is (= {"name" "Paolo" "surname" "Anedda"}
            (create-record-from-line "Paolo,Anedda" ["name" "surname"])))
-    (is (= {}
+    (is (= {"label-1" "Paolo"}
            (create-record-from-line "Paolo" ["name" "surname"])))
     )
   )
@@ -63,9 +63,9 @@ field5,field6")]
                {"label1" "field3" "label2" "field4"}
                {"label1" "field5" "label2" "field6"})
              (create-records-from-multiple-lines record-line "label1,label2")))
-      (is (= '({"label1" "field1" "label2" "field2"}
-               {"label1" "field3" "label2" "field4"}
-               {"label1" "field5" "label2" "field6"})
+      (is (= '({"label-1" "field1" "label-2" "field2"}
+               {"label-1" "field3" "label-2" "field4"}
+               {"label-1" "field5" "label-2" "field6"})
              (create-records-from-multiple-lines record-line)))
       )
     )
