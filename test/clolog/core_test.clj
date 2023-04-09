@@ -1,5 +1,6 @@
 (ns clolog.core-test
   (:require [clojure.test :refer :all]
+            [clolog.util :refer :all]
             [clolog.core :refer :all]))
 
 (def data-lines
