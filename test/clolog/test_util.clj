@@ -1,0 +1,30 @@
+(ns clolog.test-util)
+
+(def data-lines
+  "Service ID,Operation,Start Date,End Date,Agent Position,Customer ID,Product,Service Type,Agent
+Case 1,Inbound Call,9.3.10 8:05,9.3.10 8:10,FL,Customer 1,MacBook Pro,Referred to Servicer,Helen
+Case 1,Handle Case,11.3.10 10:30,11.3.10 10:32,FL,Customer 1,MacBook Pro,Referred to Servicer,Helen
+Case 1,Call Outbound,11.3.10 11:45,11.3.10 11:52,FL,Customer 1,MacBook Pro,Referred to Servicer,Henk
+Case 2,Inbound Call,4.3.10 11:43,4.3.10 11:46,FL,Customer 2,MacBook Pro,Referred to Servicer,Susi
+Case 3,Inbound Call,25.3.10 9:32,25.3.10 9:33,FL,Customer 3,MacBook Pro,Referred to Servicer,Mary
+Case 18,Inbound Call,25.3.10 10:35,25.3.10 10:38,FL,Customer 16,iPhone,Referred to Servicer,Karen
+Case 19,Inbound Email,14.3.10 14:08,18.3.10 8:04,FL,Customer 17,MacBook Pro,Product Assistance,Henk
+Case 19,Inbound Email,18.3.10 8:06,18.3.10 8:07,FL,Customer 17,MacBook Pro,Product Assistance,Henk
+Case 19,Handle Case,18.3.10 8:07,18.3.10 8:08,FL,Customer 17,MacBook Pro,Product Assistance,Henk
+Case 19,Handle Case,18.3.10 8:09,18.3.10 8:09,FL,Customer 17,MacBook Pro,Product Assistance,Henk
+Case 20,Handle Case,27.3.10 11:39,27.3.10 11:39,FL,Customer 18,iPhone,Product Assistance,Mariska
+Case 20,Handle Case,27.3.10 12:04,27.3.10 12:10,FL,Customer 18,iPhone,Product Assistance,Mariska
+Case 20,Handle Case,4.4.10 9:34,4.4.10 9:34,FL,Customer 18,iPhone,Product Assistance,Mariska
+Case 21,Inbound Call,4.3.10 12:17,4.3.10 12:22,FL,Customer 19,iPhone,Product Assistance,Anne
+Case 22,Inbound Call,22.3.10 8:30,22.3.10 8:31,FL,Customer 3,MacBook Pro,Product Assistance,Erik
+Case 23,Inbound Call,22.3.10 14:59,22.3.10 15:13,FL,Customer 20,iPhone,Referred to Servicer,Ton
+Case 24,Inbound Call,28.3.10 10:04,28.3.10 10:09,FL,Customer 21,iPhone,Referred to Servicer,Kenny
+Case 25,Inbound Call,12.3.10 9:53,12.3.10 9:56,FL,Customer 22,iPhone,Product Assistance,Henk
+Case 25,Call Outbound,12.3.10 11:45,12.3.10 11:49,FL,Customer 22,iPhone,Product Assistance,Henk
+Case 26,Inbound Call,18.3.10 17:52,18.3.10 17:52,FL,Customer 23,iPhone,Product Assistance,Christian
+Case 27,Inbound Call,29.3.10 14:33,29.3.10 14:35,FL,Customer 3,iPhone,Product Assistance,Anne
+Case 28,Handle Email,6.3.10 13:57,6.3.10 14:03,FL,Customer 24,iPhone,Product Assistance,Mary
+Case 28,Call Outbound,6.3.10 14:03,6.3.10 14:04,FL,Customer 24,iPhone,Product Assistance,Mary
+Case 29,Inbound Call,20.3.10 7:35,20.3.10 7:36,FL,Customer 3,MacBook Pro,Product Assistance,Henk
+Case 30,Inbound Call,22.3.10 10:16,22.3.10 10:17,FL,Customer 25,iPhone,Product Assistance,Maja")
+
